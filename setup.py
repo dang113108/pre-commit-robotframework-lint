@@ -4,7 +4,7 @@ import sys
 
 from setuptools import find_packages, setup
 
-install_requires = ['robotframework']
+install_requires = ['robotframework-lint']
 if sys.version_info < (2, 7):
     install_requires.append('argparse')
 
@@ -27,10 +27,4 @@ setup(
     ],
     packages=find_packages('.', exclude=('tests*', 'testing*')),
     install_requires=install_requires,
-    entry_points={
-        'console_scripts': [
-            ('python-robotframework-lint = '
-             'pre_commit_robotframework_lint.rf_tidy:main'),
-        ],
-    },
 )
