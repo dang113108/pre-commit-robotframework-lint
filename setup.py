@@ -13,9 +13,9 @@ setup(
     name='pre_commit_robotframework_lint',
     description='A pre-commit hook to run robotframework-lint tool.',
     url='https://github.com/dang113108/pre-commit-robotframework-lint',
-    version='1.0.1',
-    author='Debjit Biswas',
-    author_email='debjit.biswas@bonzai.co',
+    version='2.0.1',
+    author='Robert Chen',
+    author_email='dang113108@gmail.com',
     platforms='any',
     classifiers=[
         'License :: OSI Approved :: MIT License',
