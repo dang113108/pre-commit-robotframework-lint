@@ -1,5 +1,5 @@
--   id: robotframework-lint
-    name: robotframework-lint
-    entry: python -m rflint
-    language: python
-    files: \.robot$
+- id: robotframework-lint
+  name: robotframework-lint
+  entry: python -m rflint -i LineTooLong
+  language: python
+  files: \.robot$
