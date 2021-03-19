@@ -12,7 +12,7 @@ if sys.version_info < (2, 7):
 setup(
     name='pre_commit_robotframework_lint',
     description='A pre-commit hook to run robotframework-lint tool.',
-    url='https://github.com/bonzaico/pre-commit-robotframework-lint',
+    url='https://github.com/dang113108/pre-commit-robotframework-lint',
     version='1.0.1',
     author='Debjit Biswas',
     author_email='debjit.biswas@bonzai.co',
