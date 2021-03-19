@@ -1,28 +1,32 @@
--   repo: git://github.com/pre-commit/pre-commit-hooks
-    sha: cf550fcab3f12015f8676b8278b30e1a5bc10e70
-    hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: autopep8-wrapper
-    -   id: check-docstring-first
-    -   id: check-json
-    -   id: check-case-conflict
-    -   id: check-merge-conflict
-    -   id: check-added-large-files
-    -   id: check-yaml
-    -   id: debug-statements
-    -   id: name-tests-test
-    -   id: requirements-txt-fixer
-    -   id: flake8
-    -   id: detect-private-key
-    -   id: double-quote-string-fixer
-    -   id: name-tests-test
--   repo: git://github.com/pre-commit/pre-commit
-    sha: 2a642b0619b76cbe1a4d217ec5f9e513dd4e4c08
-    hooks:
-    -   id: validate_config
-    -   id: validate_manifest
--   repo: git://github.com/asottile/reorder_python_imports
-    sha: 3d86483455ab5bd06cc1069fdd5ac57be5463f10
-    hooks:
-    -   id: reorder-python-imports
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  rev: v3.4.0
+  hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-docstring-first
+      - id: check-json
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: debug-statements
+      - id: name-tests-test
+      - id: requirements-txt-fixer
+      - id: detect-private-key
+- repo: git://github.com/pre-commit/pre-commit
+  rev: v2.11.1
+  hooks:
+      - id: validate_config
+      - id: validate_manifest
+- repo: git://github.com/pre-commit/mirrors-autopep8
+  rev: v1.5.6
+  hooks:
+      - id: autopep8
+- repo: git://gitlab.com/PyCQA/flake8
+  rev: 3.9.0
+  hooks:
+      - id: flake8
+- repo: git://github.com/asottile/reorder_python_imports
+  rev: v2.4.0
+  hooks:
+      - id: reorder-python-imports
